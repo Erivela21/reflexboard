@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="813" height="187" viewBox="0 0 813 187" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14">
+<rect width="813" height="187" rx="8" fill="#0d1117"/>
+<rect width="813" height="30" rx="8" fill="#30363d"/>
+<rect y="22" width="813" height="8" fill="#30363d"/>
+<circle cx="18" cy="15" r="6" fill="#ff5f56"/><circle cx="38" cy="15" r="6" fill="#ffbd2e"/><circle cx="58" cy="15" r="6" fill="#27c93f"/>
+<text x="406.5" y="20" fill="#c9d1d9" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">make (cross-compile for the board)</text>
+<text x="16" y="52" fill="#7ee787" xml:space="preserve">$ make</text>
+<text x="16" y="71" fill="#e6edf3" xml:space="preserve">arm-linux-gnueabihf-gcc -g -O0 -Wall -Dsoc_cv_av src/main.c src/screen.c</text>
+<text x="16" y="90" fill="#e6edf3" xml:space="preserve">    lib/terasic_lcd/lcd_graphic.c lib/terasic_lcd/font.c src/board.c lib/terasic_lcd/LCD_Hw.c</text>
+<text x="16" y="109" fill="#e6edf3" xml:space="preserve">    lib/terasic_lcd/LCD_Driver.c lib/terasic_lcd/LCD_Lib.c -o reflexboard -lrt -lm</text>
+<text x="16" y="128" fill="#7ee787" xml:space="preserve">$ file reflexboard</text>
+<text x="16" y="147" fill="#e6edf3" xml:space="preserve">reflexboard: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked,</text>
+<text x="16" y="166" fill="#e6edf3" xml:space="preserve">    interpreter /lib/ld-linux-armhf.so.3, for GNU/Linux 3.2.0, with debug_info, not stripped</text>
+</svg>

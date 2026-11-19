@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="578" height="586" viewBox="0 0 578 586" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14">
+<rect width="578" height="586" rx="8" fill="#0d1117"/>
+<rect width="578" height="30" rx="8" fill="#30363d"/>
+<rect y="22" width="578" height="8" fill="#30363d"/>
+<circle cx="18" cy="15" r="6" fill="#ff5f56"/><circle cx="38" cy="15" r="6" fill="#ffbd2e"/><circle cx="58" cy="15" r="6" fill="#27c93f"/>
+<text x="289.0" y="20" fill="#c9d1d9" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">make sim (PC simulator)</text>
+<text x="16" y="52" fill="#7ee787" xml:space="preserve">$ make sim</text>
+<text x="16" y="71" fill="#e6edf3" xml:space="preserve">[sim] ReflexBoard simulator: any key = USER BUTTON, Ctrl+C = quit</text>
+<text x="16" y="90" fill="#79c0ff" xml:space="preserve">=========== ReflexBoard ===========</text>
+<text x="16" y="109" fill="#e6edf3" xml:space="preserve">Press USER BUTTON to start (Ctrl+C to quit)</text>
+<text x="16" y="128" fill="#e6edf3" xml:space="preserve">Try 1/5: get ready...</text>
+<text x="16" y="147" fill="#f2cc60" xml:space="preserve">[sim]   &gt;&gt;&gt; LED ON &lt;&lt;&lt;</text>
+<text x="16" y="166" fill="#e6edf3" xml:space="preserve">Try 1/5:  235.0 ms  PRO</text>
+<text x="16" y="185" fill="#e6edf3" xml:space="preserve">Try 2/5: get ready...</text>
+<text x="16" y="204" fill="#ff7b72" xml:space="preserve">Try 2/5: FALSE START!</text>
+<text x="16" y="223" fill="#e6edf3" xml:space="preserve">Try 3/5: get ready...</text>
+<text x="16" y="242" fill="#f2cc60" xml:space="preserve">[sim]   &gt;&gt;&gt; LED ON &lt;&lt;&lt;</text>
+<text x="16" y="261" fill="#e6edf3" xml:space="preserve">Try 3/5:  198.1 ms  WORLD CLASS</text>
+<text x="16" y="280" fill="#e6edf3" xml:space="preserve">Try 4/5: get ready...</text>
+<text x="16" y="299" fill="#f2cc60" xml:space="preserve">[sim]   &gt;&gt;&gt; LED ON &lt;&lt;&lt;</text>
+<text x="16" y="318" fill="#ff7b72" xml:space="preserve">Try 4/5: TOO SLOW!</text>
+<text x="16" y="337" fill="#e6edf3" xml:space="preserve">Try 5/5: get ready...</text>
+<text x="16" y="356" fill="#f2cc60" xml:space="preserve">[sim]   &gt;&gt;&gt; LED ON &lt;&lt;&lt;</text>
+<text x="16" y="375" fill="#e6edf3" xml:space="preserve">Try 5/5:  262.0 ms  GOOD</text>
+<text x="16" y="394" fill="#79c0ff" xml:space="preserve">---------- RESULTS ----------</text>
+<text x="16" y="413" fill="#79c0ff" xml:space="preserve">Best        :  198.1 ms</text>
+<text x="16" y="432" fill="#79c0ff" xml:space="preserve">Average     :  231.7 ms (3 valid tries)</text>
+<text x="16" y="451" fill="#79c0ff" xml:space="preserve">Rating      : PRO</text>
+<text x="16" y="470" fill="#e6edf3" xml:space="preserve">False starts: 1</text>
+<text x="16" y="489" fill="#e6edf3" xml:space="preserve">Too slow    : 1</text>
+<text x="16" y="508" fill="#79c0ff" xml:space="preserve">-----------------------------</text>
+<text x="16" y="527" fill="#e6edf3" xml:space="preserve">Press USER BUTTON to play again (Ctrl+C to quit)</text>
+<text x="16" y="546" fill="#e6edf3" xml:space="preserve"></text>
+<text x="16" y="565" fill="#e6edf3" xml:space="preserve">Bye!</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="900" height="460" fill="#ffffff"/>
+  <g text-anchor="middle">
+    <!-- title -->
+    <rect x="30" y="30" width="170" height="60" rx="30" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="115" y="56" font-weight="bold" fill="#1f2328">Title screen</text>
+    <text x="115" y="75" fill="#57606a" font-size="12">wait for a press</text>
+
+    <!-- get ready -->
+    <rect x="260" y="30" width="190" height="60" rx="6" fill="#ddf4ff" stroke="#54aeff"/>
+    <text x="355" y="56" font-weight="bold" fill="#1f2328">Try n/5: GET READY</text>
+    <text x="355" y="75" fill="#57606a" font-size="12">random wait 1–4 s</text>
+
+    <!-- pressed during wait? -->
+    <polygon points="355,120 455,165 355,210 255,165" fill="#fff8c5" stroke="#d4a72c"/>
+    <text x="355" y="160" fill="#1f2328">pressed during</text>
+    <text x="355" y="178" fill="#1f2328">the wait?</text>
+
+    <rect x="530" y="135" width="160" height="60" rx="6" fill="#ffebe9" stroke="#ff8182"/>
+    <text x="610" y="161" font-weight="bold" fill="#cf222e">FALSE START</text>
+    <text x="610" y="180" fill="#57606a" font-size="12">counts as a foul</text>
+
+    <!-- LED on -->
+    <rect x="260" y="245" width="190" height="60" rx="6" fill="#dafbe1" stroke="#4ac26b"/>
+    <text x="355" y="271" font-weight="bold" fill="#1f2328">LED ON, start clock</text>
+    <text x="355" y="290" fill="#57606a" font-size="12">t0 = now</text>
+
+    <polygon points="355,330 455,375 355,420 255,375" fill="#fff8c5" stroke="#d4a72c"/>
+    <text x="355" y="370" fill="#1f2328">press within</text>
+    <text x="355" y="388" fill="#1f2328">2 seconds?</text>
+
+    <rect x="530" y="345" width="160" height="60" rx="6" fill="#ffebe9" stroke="#ff8182"/>
+    <text x="610" y="371" font-weight="bold" fill="#cf222e">TOO SLOW</text>
+    <text x="610" y="390" fill="#57606a" font-size="12">counts as a foul</text>
+
+    <rect x="30" y="345" width="180" height="60" rx="6" fill="#dafbe1" stroke="#4ac26b"/>
+    <text x="120" y="371" font-weight="bold" fill="#1f2328">time = t1 − t0</text>
+    <text x="120" y="390" fill="#57606a" font-size="12">e.g. "234 ms PRO"</text>
+
+    <!-- next / summary -->
+    <polygon points="790,165 870,210 790,255 710,210" fill="#fff8c5" stroke="#d4a72c"/>
+    <text x="790" y="206" fill="#1f2328">5 tries</text>
+    <text x="790" y="223" fill="#1f2328">done?</text>
+    <rect x="720" y="30" width="150" height="60" rx="30" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="795" y="56" font-weight="bold" fill="#1f2328">Results</text>
+    <text x="795" y="75" fill="#57606a" font-size="12">best, average, fouls</text>
+  </g>
+
+  <g stroke="#57606a" stroke-width="2" fill="none">
+    <line x1="200" y1="60" x2="258" y2="60" marker-end="url(#a)"/>
+    <line x1="355" y1="90" x2="355" y2="118" marker-end="url(#a)"/>
+    <line x1="455" y1="165" x2="528" y2="165" marker-end="url(#a)"/>
+    <line x1="355" y1="210" x2="355" y2="243" marker-end="url(#a)"/>
+    <line x1="355" y1="305" x2="355" y2="328" marker-end="url(#a)"/>
+    <line x1="455" y1="375" x2="528" y2="375" marker-end="url(#a)"/>
+    <line x1="255" y1="375" x2="212" y2="375" marker-end="url(#a)"/>
+    <!-- all outcomes go to "5 tries done?" -->
+    <path d="M690,165 L705,165 L705,200 L712,205" marker-end="url(#a)"/>
+    <path d="M690,375 L790,375 L790,257" marker-end="url(#a)"/>
+    <path d="M120,405 L120,440 L820,440 L820,248" marker-end="url(#a)"/>
+    <!-- no: next try -->
+    <path d="M790,165 L790,110 L500,110 L500,60 L452,60" marker-end="url(#a)"/>
+    <!-- yes: results -->
+    <path d="M870,210 L885,210 L885,60 L872,60" marker-end="url(#a)"/>
+    <!-- play again -->
+    <path d="M795,30 L795,12 L115,12 L115,28" marker-end="url(#a)"/>
+  </g>
+  <g font-size="12" fill="#57606a">
+    <text x="470" y="155">yes</text><text x="362" y="230">no</text>
+    <text x="470" y="365">no</text><text x="220" y="365">yes</text>
+    <text x="640" y="104">no → next try</text>
+    <text x="848" y="140" text-anchor="end">yes</text>
+    <text x="455" y="26" text-anchor="middle">press = play again</text>
+  </g>
+</svg>

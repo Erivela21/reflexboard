@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="720" height="300" fill="#f6f8fa"/>
+  <rect x="10" y="10" width="700" height="280" rx="12" fill="none" stroke="#8c959f" stroke-width="3" stroke-dasharray="12 8"/>
+  <text x="360" y="120" text-anchor="middle" font-size="44">📷</text>
+  <text x="360" y="170" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2328">Photo: playing</text>
+  <text x="360" y="200" text-anchor="middle" font-size="16" fill="#57606a">finger on USER BUTTON, LED lit, LCD showing GET READY</text>
+  <text x="360" y="245" text-anchor="middle" font-size="14" fill="#bc4c00">TODO: replace docs/figs/photo-playing.svg with your photo (photo-playing.jpg)</text>
+</svg>
