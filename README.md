@@ -9,7 +9,7 @@ Reaction time matters in almost every sport: a goalkeeper diving for a penalty, 
 leaving the blocks, a tennis player returning a serve. Elite athletes react in about 150–200 ms.
 How fast are you?
 
-![](docs/figs/photo-playing.svg)
+<p align="center"><img src="docs/figs/photo-playing.jpg" width="420" alt="Playing ReflexBoard: finger on the USER BUTTON, LCD showing TRY 1/5 GET READY"></p>
 
 | Title | Get ready | Result | False start | Final results |
 |:---:|:---:|:---:|:---:|:---:|
@@ -47,6 +47,12 @@ Two things count as a **foul**:
 |---|---|---|
 | **FALSE START** | you press *before* the LED lights up (guessing doesn't work!) | ![](docs/figs/lcd-false-start.png) |
 | **TOO SLOW** | you don't press within 2 seconds | ![](docs/figs/lcd-too-slow.png) |
+
+On the real board (photos taken while playing):
+
+| GO! The USER LED (green) lights up | TOO SLOW | FALSE START |
+|:---:|:---:|:---:|
+| <img src="docs/figs/photo-board-led-on.jpg" width="260"> | <img src="docs/figs/photo-board-too-slow.jpg" width="260"> | <img src="docs/figs/photo-board-false-start.jpg" width="260"> |
 
 After 5 tries the board shows your **best** time, your **average**, the number of fouls and a rating:
 
@@ -219,9 +225,9 @@ The board has **two** USB device ports, and it's easy to pick the wrong one:
 
 If Windows shows *Altera USB-Blaster II* instead of a *USB Serial Port*, you used the wrong one.
 
-![](docs/figs/photo-uart-port.jpg)
+<p align="center"><img src="docs/figs/photo-uart-port.jpg" width="380" alt="UART mini-USB port next to the microSD slot"></p>
 
-![](docs/figs/photo-setup.svg)
+<p align="center"><img src="docs/figs/photo-setup.jpg" width="420" alt="The setup: board with power, Ethernet (blue) and mini-USB (black) cables to the laptop"></p>
 
 > [!TIP]
 > **Task**
@@ -408,9 +414,9 @@ The button is the small one labelled **USER BUTTON**, in the corner next to the 
 above the big `KEY0` button. Right below it are `HPS RST` and `WARM RST`: **don't** press those,
 they reboot the board. The USER LED is next to the button.
 
-![](docs/figs/photo-hps-corner.jpg)
+<p align="center"><img src="docs/figs/photo-hps-corner.jpg" width="380" alt="HPS corner: USER BUTTON, HPS RST, WARM RST, USER LED next to the IR receiver"></p>
 
-![](docs/figs/photo-lcd-result.svg)
+<p align="center"><img src="docs/figs/photo-lcd-result.jpg" width="420" alt="LCD showing the results: BEST 257 ms, AVG 320 ms, FOULS 1, AVERAGE"></p>
 
 | Command | What it does |
 |---|---|
