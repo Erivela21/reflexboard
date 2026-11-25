@@ -204,7 +204,7 @@ The script `tools/setup-host.sh` installs both and adds the variables `GCC_Linar
 > 1. After flashing, Windows shows *"You need to format the disk..."* one or more times.
 >    Click **Cancel** every time (Windows can't read the Linux partition; formatting would destroy it).
 > 1. Check: a small drive (~500 MB) now shows `zImage`, `socfpga.dtb` and `u-boot.scr`.
-> 1. Eject the card and insert it in the microSD slot, on the **underside** of the board.
+> 1. Eject the card and insert it in the microSD slot, next to the UART mini-USB port (see the photo in 2.2).
 
 On Linux you can use `dd` instead, as in the course tutorial *Tutorial-HPS-Running*.
 
@@ -212,8 +212,14 @@ On Linux you can use `dd` instead, as in the course tutorial *Tutorial-HPS-Runni
 
 ![](docs/figs/connections.svg)
 
-The board has **two** USB ports. The one we need is the **mini-USB labelled UART, next to the
-Ethernet jack**. The other one is the **USB-Blaster** (FPGA programming) and won't give you a console.
+The board has **two** USB device ports, and it's easy to pick the wrong one:
+
+- the **UART mini-USB**, next to the microSD slot and the two USB host ports: this is the serial console. ✔
+- the **USB-Blaster** (square USB-B, next to the power jack): it programs the FPGA and won't give you a console. ✘
+
+If Windows shows *Altera USB-Blaster II* instead of a *USB Serial Port*, you used the wrong one.
+
+![](docs/figs/photo-uart-port.jpg)
 
 ![](docs/figs/photo-setup.svg)
 
@@ -369,7 +375,7 @@ $ python3 tools/lcd2png.py out/lcd-003.pbm lcd.png
 > `make run` cross-compiles (if needed), copies `reflexboard` to `/home/root` on the board with `scp`
 > and starts it with `ssh -t`. Then play on the **board**: the program's output appears in your terminal.
 
-Example output (your times will be different):
+A real round played on the board while writing this tutorial (your times will be different):
 
 ```
 scp -O ... reflexboard root@192.168.10.13:/home/root/reflexboard
@@ -377,13 +383,18 @@ ssh ... root@192.168.10.13 -t "cd /home/root && ./reflexboard"
 =========== ReflexBoard ===========
 Press USER BUTTON to start (Ctrl+C to quit)
 Try 1/5: get ready...
-Try 1/5:  243.1 ms  PRO
+Try 1/5:  399.5 ms  AVERAGE
 Try 2/5: get ready...
 Try 2/5: FALSE START!
-...
+Try 3/5: get ready...
+Try 3/5:  252.6 ms  GOOD
+Try 4/5: get ready...
+Try 4/5:  166.9 ms  WORLD CLASS
+Try 5/5: get ready...
+Try 5/5:  179.6 ms  WORLD CLASS
 ---------- RESULTS ----------
-Best        :  221.4 ms
-Average     :  248.9 ms (4 valid tries)
+Best        :  166.9 ms
+Average     :  249.6 ms (4 valid tries)
 Rating      : PRO
 False starts: 1
 Too slow    : 0
@@ -391,10 +402,13 @@ Too slow    : 0
 Press USER BUTTON to play again (Ctrl+C to quit)
 ```
 
-The button is the one labelled **USER BUTTON** in the HPS corner of the board. **Don't** press
-`HPS_RST` or `WARM_RST`: they reboot the board.
+The first try (399.5 ms) is typical: you get faster once you know what to expect.
 
-![](docs/figs/photo-hps-corner.svg)
+The button is the small one labelled **USER BUTTON**, in the corner next to the IR receiver,
+above the big `KEY0` button. Right below it are `HPS RST` and `WARM RST`: **don't** press those,
+they reboot the board. The USER LED is next to the button.
+
+![](docs/figs/photo-hps-corner.jpg)
 
 ![](docs/figs/photo-lcd-result.svg)
 
